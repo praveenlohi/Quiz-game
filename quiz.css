@@ -1,0 +1,100 @@
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(to right, #232526, #414345);
+  color: #fff;
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  background-color: #2c3e50;
+  padding: 30px;
+  border-radius: 15px;
+  text-align: center;
+  box-shadow: 0px 0px 30px rgba(0,0,0,0.6);
+  width: 90%;
+  max-width: 420px;
+  transition: 0.3s ease;
+}
+
+h1 {
+  margin-bottom: 20px;
+}
+
+button {
+  margin-top: 15px;
+  padding: 12px 25px;
+  background-color: #3498db;
+  color: white;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+button:hover:not(:disabled) {
+  background-color: #2980b9;
+}
+
+button:disabled {
+  background-color: #7f8c8d;
+  cursor: not-allowed;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  background-color: #34495e;
+  margin: 10px 0;
+  padding: 12px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+li:hover {
+  background-color: #3d5a73;
+}
+
+.correct {
+  background-color: #27ae60 !important;
+  color: white;
+}
+
+.wrong {
+  background-color: #c0392b !important;
+  color: white;
+}
+
+#feedback {
+  margin-top: 10px;
+  font-weight: bold;
+  font-size: 1.1em;
+}
+
+#timer {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+#progress-container {
+  width: 100%;
+  background: #bdc3c7;
+  border-radius: 5px;
+  overflow: hidden;
+  margin-bottom: 15px;
+}
+
+#progress-bar {
+  height: 10px;
+  background-color: #2ecc71;
+  width: 0%;
+  transition: width 0.4s ease-in-out;
+}
